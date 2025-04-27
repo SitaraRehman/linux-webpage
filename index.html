@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Tutorial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            color: #0056b3;
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Linux Tutorial: Quick Guide</h1>
+</header>
+
+<section>
+    <h2>1. Introduction to Linux</h2>
+    <p>Linux is a free and open-source operating system based on Unix. It is widely used for servers, desktops, and embedded systems.</p>
+
+    <h2>2. Basic Commands</h2>
+    <table>
+        <tr>
+            <th>Command</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td><code>pwd</code></td>
+            <td>Shows current directory path</td>
+        </tr>
+        <tr>
+            <td><code>ls</code></td>
+            <td>Lists files and folders</td>
+        </tr>
+        <tr>
+            <td><code>cd</code></td>
+            <td>Changes directory</td>
+        </tr>
+        <tr>
+            <td><code>mkdir</code></td>
+            <td>Creates a new directory</td>
+        </tr>
+        <tr>
+            <td><code>touch</code></td>
+            <td>Creates a new file</td>
+        </tr>
+        <tr>
+            <td><code>cp</code></td>
+            <td>Copies files</td>
+        </tr>
+        <tr>
+            <td><code>mv</code></td>
+            <td>Moves or renames files</td>
+        </tr>
+        <tr>
+            <td><code>rm</code></td>
+            <td>Deletes files</td>
+        </tr>
+        <tr>
+            <td><code>cat</code></td>
+            <td>Displays file contents</td>
+        </tr>
+        <tr>
+            <td><code>echo</code></td>
+            <td>Prints text to the terminal</td>
+        </tr>
+        <tr>
+            <td><code>grep</code></td>
+            <td>Searches for patterns within files</td>
+        </tr>
+        <tr>
+            <td><code>find</code></td>
+            <td>Searches for files and directories</td>
+        </tr>
+        <tr>
+            <td><code>chmod</code></td>
+            <td>Changes file permissions</td>
+        </tr>
+        <tr>
+            <td><code>chown</code></td>
+            <td>Changes file owner and group</td>
+        </tr>
+        <tr>
+            <td><code>tar</code></td>
+            <td>Archives files and directories</td>
+        </tr>
+        <tr>
+            <td><code>zip</code></td>
+            <td>Compresses files into a ZIP archive</td>
+        </tr>
+        <tr>
+            <td><code>unzip</code></td>
+            <td>Extracts files from a ZIP archive</td>
+        </tr>
+    </table>
+    <h2>3. More Linux Commands</h2>
+    <table>
+        <tr>
+            <th>Command</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td><code>whoami</code></td>
+            <td>Shows the current username</td>
+        </tr>
+        <tr>
+            <td><code>uname -a</code></td>
+            <td>Displays system information (kernel name, version)</td>
+        </tr>
+        <tr>
+            <td><code>uptime</code></td>
+            <td>Shows how long the system has been running</td>
+        </tr>
+        <tr>
+            <td><code>ps</code></td>
+            <td>Displays information about running processes</td>
+        </tr>
+        <tr>
+            <td><code>kill PID</code></td>
+            <td>Terminates a process by Process ID (PID)</td>
+        </tr>
+        <tr>
+            <td><code>sudo</code></td>
+            <td>Runs a command as a superuser (administrator)</td>
+        </tr>
+        <tr>
+            <td><code>wget</code></td>
+            <td>Downloads files from the internet</td>
+        </tr>
+        <tr>
+            <td><code>scp</code></td>
+            <td>Copies files between computers over SSH</td>
+        </tr>
+        <tr>
+            <td><code>alias</code></td>
+            <td>Creates shortcuts for commands</td>
+        </tr>
+        <tr>
+            <td><code>crontab -e</code></td>
+            <td>Schedules tasks to run automatically</td>
+        </tr>
+        <tr>
+            <td><code>diff file1 file2</code></td>
+            <td>Compares two files and shows differences</td>
+        </tr>
+        <tr>
+            <td><code>head</code></td>
+            <td>Displays the first few lines of a file</td>
+        </tr>
+        <tr>
+            <td><code>tail</code></td>
+            <td>Displays the last few lines of a file</td>
+        </tr>
+        <tr>
+            <td><code>basename /path/filename</code></td>
+            <td>Extracts the filename from a path</td>
+        </tr>
+    </table>
+
+    <h2>4. File Permissions</h2>
+    <p>Linux provides an advanced permission system. You can use the <code>chmod</code> command to change the permissions of files. For example:</p>
+    <code>chmod 755 file.txt</code>
+    <p>This gives the file owner full permissions, and others can read or execute the file.</p>
+
+    <h2>5. Package Management</h2>
+    <p>To install or update software on your Linux system, you can use package managers.</p>
+    <h3>Ubuntu/Debian</h3>
+    <ul>
+        <li><code>sudo apt update</code> – Update the package list</li>
+        <li><code>sudo apt install package-name</code> – Install a new package</li>
+        <li><code>sudo apt upgrade</code> – Upgrade installed packages</li>
+    </ul>
+    <h3>Red Hat/CentOS</h3>
+    <ul>
+        <li><code>sudo yum install package-name</code> – Install a package using YUM</li>
+        <li><code>sudo yum update</code> – Update the system</li>
+        <li><code>sudo yum remove package-name</code> – Remove a package</li>
+    </ul>
+
+    <h2>6. Networking Commands</h2>
+    <table>
+        <tr>
+            <th>Command</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td><code>ifconfig</code></td>
+            <td>Displays network interface configuration</td>
+        </tr>
+        <tr>
+            <td><code>ping</code></td>
+            <td>Checks network connectivity</td>
+        </tr>
+        <tr>
+            <td><code>ssh</code></td>
+            <td>Connects to a remote system via SSH</td>
+        </tr>
+        <tr>
+            <td><code>netstat</code></td>
+            <td>Displays network connections, routing tables, and interface statistics</td>
+        </tr>
+        <tr>
+            <td><code>curl</code></td>
+            <td>Transfers data from or to a server</td>
+        </tr>
+    </table>
+  
+
+    <h2>7. Useful Tips</h2>
+    <ul>
+        <li><code>man command</code> – Opens manual for any command.</li>
+        <li><code>history</code> – Shows previously typed commands.</li>
+        <li>Use the <strong>Tab</strong> key for auto-completion!</li>
+        <li><code>clear</code> – Clears the terminal screen.</li>
+        <li><code>top</code> – Displays system processes and resource usage.</li>
+        <li><code>df</code> – Displays disk space usage.</li>
+        <li><code>du</code> – Displays disk usage of files and directories.</li>
+    </ul>
+    <h2>8. Conclusion</h2>
+    <p>Learning Linux boosts your technical skills and makes you comfortable with servers, cloud computing, and programming environments.</p>
+    <p>Mastering basic commands helps you interact easily with the system and automate tasks.</p>
+    <p>Linux powers most of the world's servers, supercomputers, and cloud platforms, so learning it opens great career opportunities.</p>
+    <p>Keep practicing different commands daily, and try small projects like creating scripts, managing users, and setting up your own server!</p>
+    <p>As you progress, explore more advanced topics like shell scripting, cron jobs, system administration, and network security.</p>
+    
+    
+    
+    <footer>
+        <p>&copy; 2025 Linux Tutorial. All rights reserved.</p>
+    </footer>
+</body>    
